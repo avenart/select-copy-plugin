@@ -1,0 +1,17 @@
+.scb-button {
+  position: absolute;
+  padding: 10px 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 9999;
+  transition: opacity 0.2s ease;
+}
+
+.scb-button:active {
+  background-color: #218838;
+}
