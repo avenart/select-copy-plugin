@@ -9,6 +9,7 @@
         buttonText: 'Copy',
         copiedText: 'Copied!',
         buttonClass: 'scb-button',
+        onSelect: null,
       },
       options
     )
@@ -28,6 +29,11 @@
       if (!text.length) {
         $copyBtn.hide()
         return
+      }
+
+      // Trigger the onSelect callback if provided
+      if (typeof settings.onSelect === 'function') {
+        settings.onSelect(text)
       }
 
       const range = selection.getRangeAt(0)

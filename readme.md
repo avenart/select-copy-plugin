@@ -33,5 +33,8 @@ $('#my-article').selectCopyButton({
   buttonText: 'Copy',
   copiedText: 'Copied!',
   buttonClass: 'custom-copy-btn',
+  onSelect: function (selectedText) {
+    console.log('Selected text:', selectedText)
+  },
 })
 ```
