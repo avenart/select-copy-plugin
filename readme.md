@@ -25,3 +25,10 @@ Perfect for articles, documentation, or any block of text where users may want t
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="jquery.select-copy-plugin.js"></script>
 ```
+
+## 📦 Options
+
+```html
+$('#my-article').selectCopyButton({ buttonText: 'Copy', copiedText: 'Copied!',
+buttonClass: 'custom-copy-btn' });
+```
